@@ -190,7 +190,7 @@ go
 alter table TranDau
 add constraint fk_VongDau_TranDau foreign key(MaVongDau) references VongDau(MaVongDau),
 	constraint fk_GiaiDau_TranDau foreign key(MaGiaiDau) references GiaiDau(MaGiaiDau),
-	constraint fk_SanVanDong_TranDau foreign key(MaSanVanDong) references GiaiDau(MaSanVanDong);
+	constraint fk_SanVanDong_TranDau foreign key(MaSanVanDong) references SanVanDong(MaSanVanDong);
 go
 
 alter table TrongTai_TranDau
